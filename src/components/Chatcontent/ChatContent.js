@@ -4,7 +4,7 @@ import './ChatContent.css'
 import ChatItem from './ChatItem';
 
 const ChatContent = () => {
-
+    const messagesEndRef = createRef(null);
     const chatItems = [
         {
             key: 1,
@@ -58,8 +58,8 @@ const ChatContent = () => {
     ];
 
     return (
-        <div className='main_content'>
-            <div className='content_header'>
+        <div className='main__chatcontent'>
+            <div className='content__header'>
                 <div className='blocks'>
                     <div className='current-chatting-user'>
                         <Avatar isOnline='active' image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU" />
@@ -76,7 +76,50 @@ const ChatContent = () => {
             </div>
             <div className="content-body">
                 <div className="chat-items">
-                    <ChatItem />
+                    <ChatItem animationDelay={1 + 2}
+                        key='3'
+                        user={chatItems.type ? chatItems.type : "me"}
+                        msg='hi how are you'
+                        image='https://www.paintingcontest.org/components/com_djclassifieds/assets/images/default_profile.png' />
+                    <div ref={messagesEndRef} />
+                    <ChatItem animationDelay={1 + 2}
+                        key='3'
+                        user={chatItems.type ? chatItems.type : "other"}
+                        msg='hi how are you'
+                        image='https://www.paintingcontest.org/components/com_djclassifieds/assets/images/default_profile.png' />
+                    <div ref={messagesEndRef} />
+                    <ChatItem animationDelay={1 + 2}
+                        key='3'
+                        user={chatItems.type ? chatItems.type : "other"}
+                        msg='hi how are you'
+                        image='https://www.paintingcontest.org/components/com_djclassifieds/assets/images/default_profile.png' />
+                    <div ref={messagesEndRef} />
+                    <ChatItem animationDelay={1 + 2}
+                        key='3'
+                        user={chatItems.type ? chatItems.type : "me"}
+                        msg='hi how are you'
+                        image='https://www.paintingcontest.org/components/com_djclassifieds/assets/images/default_profile.png' />
+                    <div ref={messagesEndRef} />
+                    <ChatItem animationDelay={1 + 2}
+                        key='3'
+                        user={chatItems.type ? chatItems.type : "other"}
+                        msg='hi how are you'
+                        image='https://www.paintingcontest.org/components/com_djclassifieds/assets/images/default_profile.png' />
+                    <div ref={messagesEndRef} />
+                </div>
+            </div>
+            <div className="content__footer">
+                <div className="sendNewMessage">
+                    <button className="addFiles">
+                        <i className="fa fa-plus"></i>
+                    </button>
+                    <input
+                        type="text"
+                        placeholder="Type a message here"
+                    />
+                    <button className="btnSendMsg" id="sendMsgBtn">
+                        <i className="fa fa-paper-plane"></i>
+                    </button>
                 </div>
             </div>
         </div>

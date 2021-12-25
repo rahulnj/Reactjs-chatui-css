@@ -1,8 +1,16 @@
 .chatbody{
     display: flex;
     flex-grow: 1;
-    background-color: #f4f3f8;
     border-radius: 10px;
     padding: 15px 20px;
-    
+
+    border:blue solid;
+    max-width: 90%;
+    margin: auto;
+    background-color: #E7EAF0;
+    min-height: 80vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    padding-left: 0;
 }

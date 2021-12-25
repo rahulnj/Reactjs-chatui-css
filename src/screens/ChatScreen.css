@@ -1,10 +1,14 @@
+
+
 .chatscreen{
-    
+    height: 100%;
         display: flex;
         flex-grow: 1;
-        background-color: #f4f3f8;
+        background-color: #0055ff;
         border-radius: 10px;
         padding: 15px 20px;
-        
+    
+
     
 }
+
