@@ -91,3 +91,12 @@
   .profile__card.open .card__header i:before {
     content: "\f106";
   }
+
+
+  
+    @media only screen and (max-width: 920px){
+      .main__userprofile{
+        display: none;
+         
+           }
+  }

@@ -74,7 +74,7 @@ const ChatContent = () => {
                     </div>
                 </div>
             </div>
-            <div className="content-body">
+            <div className="content__body">
                 <div className="chat-items">
                     <ChatItem animationDelay={1 + 2}
                         key='3'
@@ -97,6 +97,12 @@ const ChatContent = () => {
                     <ChatItem animationDelay={1 + 2}
                         key='3'
                         user={chatItems.type ? chatItems.type : "me"}
+                        msg='hi how are you'
+                        image='https://www.paintingcontest.org/components/com_djclassifieds/assets/images/default_profile.png' />
+                    <div ref={messagesEndRef} />
+                    <ChatItem animationDelay={1 + 2}
+                        key='3'
+                        user={chatItems.type ? chatItems.type : "other"}
                         msg='hi how are you'
                         image='https://www.paintingcontest.org/components/com_djclassifieds/assets/images/default_profile.png' />
                     <div ref={messagesEndRef} />
